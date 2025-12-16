@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            height: 700px;
+            width: 700px;
+            border: 1px solid black;
+            
+        }
+        main{
+            background-color: burlywood;
+            display: grid;
+            grid-template-areas: 
+            'header header header'
+            'img img contact'
+            'about about about'
+            'skills skills skills'
+            'footer footer footer';
+        }
+        header{
+            grid-area: header; 
+        }
+        img{
+            grid-area: img;
+        }
+        aside{
+            grid-area:contact;
+        }
+        .about{
+            grid-area: about;
+
+        }
+        .skills{
+            grid-area: skills;
+        }
+        footer{
+            grid-area: footer;
+            text-align: center;
+        }
+        
+    </style>
+</head>
+<body>
+    <h1 style="background-color: wheat; text-align: center;" >RESUME</h1>
+    <main>
+    
+
+    <header>
+        <p><strong>DHANYATHA MR<br>
+           ASPIRING FRONTEND DEVELOPER</strong></p>
+    </header>
+
+    <img src="/html/image/picture.jpg" height="150px" width="150px">
+
+    <aside>
+        <div id="contact">
+            <h4>CONTACT</h4>
+            <ul>
+                <li>dhan@gmail.com</li>
+                <li>Phone: 8951261210</li>
+                <li>www.dhanyatha/linkedin.com</li>
+            </ul>
+        </div>
+    </aside>
+
+    <section class="about">
+        
+            <h4>ABOUT</h4>
+            <p>I am learning HTML and CSS and enjoy building 
+            simple web pages.<br>
+            I am interested in frontend development and 
+            improving my design skills.</p>
+               
+    </section>
+
+    <section class="skills">
+       
+            <h4>SKILLS</h4>
+            <ol type="1">
+                <li>HTML</li>
+                <li>CSS</li>
+                <li>Basics of JavaScript</li>
+                <li>SQL</li>
+            </ol>
+       
+    </section>
+
+    <footer>
+        <p>Built with HTML & CSS</p>
+    </footer>
+</main>
+</body>
+</html>
